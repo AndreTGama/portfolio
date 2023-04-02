@@ -3,7 +3,7 @@ import { Navbar } from '../Navbar/Navbar';
 import { Footer } from '../Footer/Footer';
 
 type Props = {
-    children: JSX.Element[]
+    children: JSX.Element | JSX.Element[]
 }
 
 const Main = ({ children } : Props) => {

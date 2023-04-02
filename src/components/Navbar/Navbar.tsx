@@ -1,23 +1,50 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Logo from '../../assets/img/logo.png';
 import { Nav, Row, Img, Links } from './Navbar.style';
 
-export function Navbar() {
+export function Navbar() : JSX.Element {
+  const [activeValue, setActiveValue] = useState('');
+  
+  function activeLink(event: React.MouseEvent<HTMLButtonElement>){
+    const a: HTMLButtonElement = event.currentTarget;
+    setActiveValue(a.id);
+  };
+
   return (
     <Nav className="">
       <Row>
         <Img src={Logo} alt="React Logo" />
         <Row>
-          <Links href='#about'>
+          <Links 
+            onClick={activeLink} 
+            id="a_about" 
+            active={activeValue === 'a_about'} 
+            href='#about'
+          >
             About
           </Links>
-          <Links href='#projects'>
+          <Links 
+            onClick={activeLink} 
+            id="a_projects" 
+            active={activeValue === 'a_projects'} 
+            href='#projects'
+          >
             Projects
           </Links>
-          <Links href='./blog'>
+          <Links 
+            onClick={activeLink}
+            id="a_blog"  
+            active={activeValue === 'a_blog'} 
+            href='#blog'
+          >
             Blog
           </Links>
-          <Links href='#contact'>
+          <Links 
+            onClick={activeLink}
+            id="a_contact"  
+            active={activeValue === 'a_contact'} 
+            href='#contact'
+          >
             Contact
           </Links>
         </Row>

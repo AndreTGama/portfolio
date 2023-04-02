@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components"
+import space from '../assets/img/space-hd.jpg'
 
 export const GlobalStyle = createGlobalStyle`
     *{
@@ -7,7 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         
     }
     body {
-        background-color: rebeccapurple;
+        background-color: #3b3a60;
     }
     a {
         color: inherit;
