@@ -4,10 +4,11 @@ export const Nav = styled.nav`
     width: 100%;
     height: 50px;
     color: #f7f7f7;
-    background: rgba(253, 253, 253, 0.09);
+    background: rgba(253, 253, 253, 0.21);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(4.5px);
-    -webkit-backdrop-filter: blur(4.5px);
+    backdrop-filter: blur(14.8px);
+    -webkit-backdrop-filter: blur(14.8px);
+    border: 1px solid rgba(253, 253, 253, 0.5);
 `
 
 export const Row = styled.div`
