@@ -8,7 +8,8 @@ export const GlobalStyle = createGlobalStyle`
         
     }
     body {
-        background-color: #3b3a60;
+        background-color: #1c0522;
+        overflow-x: hidden;
     }
     a {
         color: inherit;
