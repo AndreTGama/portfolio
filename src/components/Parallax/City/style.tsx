@@ -5,6 +5,7 @@ type State = {
     bottom?: number;
     left?: number;
     right?: number;
+    hiddenMoon?: boolean;
 }
 
 export const Section = styled.section`
@@ -39,6 +40,9 @@ export const StarsImage = styled(Img)`
 export const MoonImage = styled(Img)`
     mix-blend-mode: screen;
     top: ${props => props.top ? `${props.top}px` : '-100px'};
+    ${({ hiddenMoon }) => hiddenMoon && `
+        display: none;
+    `}
 `;
 
 export const BuildingsImagesLeft = styled(Img)`

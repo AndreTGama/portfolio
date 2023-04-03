@@ -10,6 +10,7 @@ export const GlobalStyle = createGlobalStyle`
     body {
         background-color: #1c0522;
         overflow-x: hidden;
+        z-index: 1;
     }
     a {
         color: inherit;
