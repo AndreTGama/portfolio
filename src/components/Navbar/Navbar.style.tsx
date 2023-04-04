@@ -14,6 +14,8 @@ export const Nav = styled.nav`
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
+    position: fixed;
+    z-index: 3;
 `
 
 export const Row = styled.div`

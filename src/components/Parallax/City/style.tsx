@@ -9,8 +9,7 @@ type State = {
 }
 
 export const Section = styled.section`
-    height: 100vh;
-    padding: 100px
+    height: 85vh;
     display: flex;
     justify-content: center;
     
@@ -21,7 +20,7 @@ export const Section = styled.section`
         width: 100%;
         height: 150px;
         background: linear-gradient(to top, #1c0522, transparent);
-        z-index: 1;
+        z-index: 2;
     }
 `
 
@@ -40,9 +39,6 @@ export const StarsImage = styled(Img)`
 export const MoonImage = styled(Img)`
     mix-blend-mode: screen;
     top: ${props => props.top ? `${props.top}px` : '-100px'};
-    ${({ hiddenMoon }) => hiddenMoon && `
-        display: none;
-    `}
 `;
 
 export const BuildingsImagesLeft = styled(Img)`
