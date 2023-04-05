@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Logo from '../../assets/img/logo.png';
-import { Nav, Row, Img, Links } from './Navbar.style';
+import { Nav, Row, Img, Links, ResponsiveNavBar } from './Navbar.style';
 
 export function Navbar() : JSX.Element {
   const [activeValue, setActiveValue] = useState('');
@@ -49,25 +49,21 @@ export function Navbar() : JSX.Element {
           </Links>
         </Row>
       </Row>
-      <div>
+      <ResponsiveNavBar active={false}>
         <img />
         <div>
-          <ul>
-            <li>
-              About
-            </li>
-            <li>
-              Projects
-            </li>
-            <li>
-              Blog
-            </li>
-            <li>
-              Contact
-            </li>
-          </ul>
+          About
         </div>
-      </div>
+        <div>
+          Projects
+        </div>
+        <div>
+          Blog
+        </div>
+        <div>
+          Contact
+        </div>
+      </ResponsiveNavBar>
     </Nav>
   );
 }

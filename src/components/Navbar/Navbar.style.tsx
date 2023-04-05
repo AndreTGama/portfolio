@@ -6,14 +6,21 @@ type State = {
     onClick: any;
 }
 
-export const Nav = styled.nav`
-    width: 100%;
-    height: 50px;
-    color: #f7f7f7;
+type StateActive = {
+    active: boolean
+}
+
+export const GlassesEffect = styled.div`
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
+`
+
+export const Nav = styled(GlassesEffect)`
+    width: 100%;
+    height: 50px;
+    color: #f7f7f7;
     position: fixed;
     z-index: 3;
 `
@@ -37,4 +44,10 @@ export const Links = styled.a<State>`
         color: white;
         text-shadow: 0 0 20px white;
     }
+`
+
+export const ResponsiveNavBar = styled(GlassesEffect)<StateActive>`
+    text-align: center;
+    height: 100vh;
+    display: ${props => props.active ? 'block' : 'none'};;
 `
