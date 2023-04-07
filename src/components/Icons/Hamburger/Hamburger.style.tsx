@@ -14,7 +14,6 @@ export const Ham = styled.svg<State>`
     -ms-user-select: none;
     user-select: none;
     width: 3rem;
-    padding: 0 3rem;
     ${props => props.active ? 'transform: rotate(45deg);' : ''};
 `
 

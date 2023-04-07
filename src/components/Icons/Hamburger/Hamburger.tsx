@@ -1,7 +1,6 @@
 import React from 'react';
 import { Ham, Top, Middle, Bottom } from './Hamburger.style';
 
-// TODO assim que voltar internet validar a melhor maneira de usar esses tipos
 export function Hamburger({
     active,
     setActive,

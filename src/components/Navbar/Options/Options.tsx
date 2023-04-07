@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import { Links } from './Options.style';
-import { Row } from '../../../styles/global';
+import { Links, RowCollumn } from './Options.style';
 
 export function Options({
     active,
@@ -18,9 +17,9 @@ export function Options({
     }
 
     return (
-        <Row>
+        <RowCollumn>
             <Links
-                onClick={activeLink}
+                onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
                 id="a_about"
                 active={activeSection === 'a_about'}
                 href="#about"
@@ -28,7 +27,7 @@ export function Options({
                 About
             </Links>
             <Links
-                onClick={activeLink}
+                onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
                 id="a_projects"
                 active={activeSection === 'a_projects'}
                 href="#projects"
@@ -36,7 +35,7 @@ export function Options({
                 Projects
             </Links>
             <Links
-                onClick={activeLink}
+                onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
                 id="a_blog"
                 active={activeSection === 'a_blog'}
                 href="#blog"
@@ -44,13 +43,13 @@ export function Options({
                 Blog
             </Links>
             <Links
-                onClick={activeLink}
+                onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
                 id="a_contact"
                 active={activeSection === 'a_contact'}
                 href="#contact"
             >
                 Contact
             </Links>
-        </Row>
+        </RowCollumn>
     );
 }

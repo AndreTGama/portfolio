@@ -14,21 +14,25 @@ export const GlassesEffect = styled.div`
 
 export const Div = styled(GlassesEffect)`
     width: 100%;
-    padding: 15px 0px;
     color: #f7f7f7;
     position: fixed;
     z-index: 3;
-    height: 1rem;
+    height: 3rem;
 `
 
 export const RowLargeScreen = styled(Row)`
     flex-direction: row;
+    padding: 0 2rem;
+    height: 100%;
+
     @media (max-width: 790px) {
         display: none;
     }
 `
 export const RowSmallScreen = styled(Row)`
     display: none;
+    height: 100%;
+    padding: 0 2rem;
     @media (max-width: 790px) {
         display: flex;
         flex-direction: row;
@@ -41,7 +45,6 @@ export const ResponsiveNavBar = styled(GlassesEffect)<StateActive>`
     visibility: ${props => props.active ? 'visible' : 'hidden'};
     opacity: ${props => props.active ? '1' : '0'};
     height: ${props => props.active ? '100vh' : ''};
-    margin: 15px 0 0 0;
 
     @media (min-width: 790px) {
         display: none;

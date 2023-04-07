@@ -1,8 +1,8 @@
 import styled from "styled-components";
+import { Row } from "../../../styles/global";
 
 type State = {
     active?: boolean
-    //TODO on click should be onClick: () => void, but not working 
     onClick: any;
 }
 
@@ -18,3 +18,11 @@ export const Links = styled.a<State>`
         font-size: 1.5rem;
     }
 `
+
+export const RowCollumn = styled(Row)`
+    flex-direction: row;
+    
+    @media (max-width: 790px) {
+        flex-direction: column;
+    }
+` 
