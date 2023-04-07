@@ -2,40 +2,29 @@ import React, { useState } from 'react';
 import { Options } from './Options/Options';
 import {
     Div,
-    Row,
-    RowResponsive,
-    Img,
-    Links,
+    RowLargeScreen,
+    RowSmallScreen,
     ResponsiveNavBar,
 } from './Navbar.style';
 import { Logo } from '../Logo/Index';
 import { Hamburger } from '../Icons/Hamburger/Hamburger';
 
 export function Navbar(): JSX.Element {
-    const [activeValue, setActiveValue] = useState('');
-
-    function activeLink(event: React.MouseEvent<HTMLButtonElement>) {
-        const a: HTMLButtonElement = event.currentTarget;
-        setActiveValue(a.id);
-    }
-
+    const [activeHamburger, setActiveHamburger] = useState(false);
+  
     return (
         <nav>
             <Div>
-              <Row>
+              <RowLargeScreen>
                 <Logo/>
-                <Options />
-              </Row>
-              <Row>
+                <Options active={activeHamburger} setActive={setActiveHamburger}/>
+              </RowLargeScreen>
+              <RowSmallScreen>
                 <Logo/>
-                <Hamburger />
-              </Row>
-              <ResponsiveNavBar active={false}>
-                  <img />
-                  <div>About</div>
-                  <div>Projects</div>
-                  <div>Blog</div>
-                  <div>Contact</div>
+                <Hamburger active={activeHamburger} setActive={setActiveHamburger}/>
+              </RowSmallScreen>
+              <ResponsiveNavBar active={activeHamburger}>
+                <Options active={activeHamburger} setActive={setActiveHamburger} />
               </ResponsiveNavBar>
             </Div>
         </nav>

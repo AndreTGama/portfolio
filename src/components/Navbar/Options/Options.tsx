@@ -1,15 +1,20 @@
 import React, { useState } from 'react';
-import {
-    Links,
-} from './Options.style';
-import { Row } from '../../../styles/global'
+import { Links } from './Options.style';
+import { Row } from '../../../styles/global';
 
-export function Options(): JSX.Element {
-    const [activeValue, setActiveValue] = useState('');
+export function Options({
+    active,
+    setActive,
+}: {
+    active: boolean;
+    setActive: (value: boolean) => void;
+}): JSX.Element {
+    const [activeSection, setActiveSection] = useState('');
 
     function activeLink(event: React.MouseEvent<HTMLButtonElement>) {
         const a: HTMLButtonElement = event.currentTarget;
-        setActiveValue(a.id);
+        setActiveSection(a.id);
+        setActive(!active);
     }
 
     return (
@@ -17,7 +22,7 @@ export function Options(): JSX.Element {
             <Links
                 onClick={activeLink}
                 id="a_about"
-                active={activeValue === 'a_about'}
+                active={activeSection === 'a_about'}
                 href="#about"
             >
                 About
@@ -25,7 +30,7 @@ export function Options(): JSX.Element {
             <Links
                 onClick={activeLink}
                 id="a_projects"
-                active={activeValue === 'a_projects'}
+                active={activeSection === 'a_projects'}
                 href="#projects"
             >
                 Projects
@@ -33,7 +38,7 @@ export function Options(): JSX.Element {
             <Links
                 onClick={activeLink}
                 id="a_blog"
-                active={activeValue === 'a_blog'}
+                active={activeSection === 'a_blog'}
                 href="#blog"
             >
                 Blog
@@ -41,7 +46,7 @@ export function Options(): JSX.Element {
             <Links
                 onClick={activeLink}
                 id="a_contact"
-                active={activeValue === 'a_contact'}
+                active={activeSection === 'a_contact'}
                 href="#contact"
             >
                 Contact

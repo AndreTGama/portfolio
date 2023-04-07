@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { Row } from "../../styles/global";
 type State = {
     active?: boolean
     //TODO on click should be onClick: () => void, but not working 
@@ -23,37 +23,32 @@ export const Div = styled(GlassesEffect)`
     color: #f7f7f7;
     position: fixed;
     z-index: 3;
+    height: 1rem;
 `
 
-export const Row = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
+export const RowLargeScreen = styled(Row)`
+    flex-direction: row;
+    @media (max-width: 790px) {
+        display: none;
+    }
 `
-export const RowResponsive = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 2rem;
-`
-
-export const Img = styled.img`
-    height: 50px;
-`
-
-export const Links = styled.a<State>`
-    color: ${props => props.active ? 'white' : '#a2a2a2'};
-    text-shadow: ${props => props.active ? '0 0 20px white' : ''};
-    padding: 0 3rem;
-    &:hover {
-        color: white;
-        text-shadow: 0 0 20px white;
+export const RowSmallScreen = styled(Row)`
+    display: none;
+    @media (max-width: 790px) {
+        display: flex;
+        flex-direction: row;
     }
 `
 
 export const ResponsiveNavBar = styled(GlassesEffect)<StateActive>`
     text-align: center;
-    height: 100vh;
-    display: ${props => props.active ? 'block' : 'none'};;
+    transition: visibility 0s, opacity 0.5s linear;
+    visibility: ${props => props.active ? 'visible' : 'hidden'};
+    opacity: ${props => props.active ? '1' : '0'};
+    height: ${props => props.active ? '100vh' : ''};
+    margin: 15px 0 0 0;
+
+    @media (min-width: 790px) {
+        display: none;
+    }
 `
