@@ -10,7 +10,7 @@ type StateActive = {
     active: boolean
 }
 
-export const GlassesEffect = styled.div`
+export const GlassesEffect = styled.nav`
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
     backdrop-filter: blur(2.2px);
@@ -19,13 +19,19 @@ export const GlassesEffect = styled.div`
 
 export const Nav = styled(GlassesEffect)`
     width: 100%;
-    height: 50px;
+    padding: 15px 0px;
     color: #f7f7f7;
     position: fixed;
     z-index: 3;
 `
 
 export const Row = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+`
+export const RowResponsive = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
