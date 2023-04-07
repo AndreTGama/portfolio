@@ -1,10 +1,5 @@
 import styled from "styled-components";
 import { Row } from "../../styles/global";
-type State = {
-    active?: boolean
-    //TODO on click should be onClick: () => void, but not working 
-    onClick: any;
-}
 
 type StateActive = {
     active: boolean
