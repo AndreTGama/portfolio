@@ -1,4 +1,4 @@
-import { createGlobalStyle } from "styled-components"
+import styled, { createGlobalStyle } from "styled-components"
 
 export const GlobalStyle = createGlobalStyle`
     *{
@@ -19,4 +19,10 @@ export const GlobalStyle = createGlobalStyle`
         background-color: #1c0522;
         width: 100%;
     }
+`
+export const Row = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
 `

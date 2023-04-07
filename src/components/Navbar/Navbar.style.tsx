@@ -10,14 +10,14 @@ type StateActive = {
     active: boolean
 }
 
-export const GlassesEffect = styled.nav`
+export const GlassesEffect = styled.div`
     background: rgba(255, 255, 255, 0.15);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
     backdrop-filter: blur(2.2px);
     -webkit-backdrop-filter: blur(2.2px);
 `
 
-export const Nav = styled(GlassesEffect)`
+export const Div = styled(GlassesEffect)`
     width: 100%;
     padding: 15px 0px;
     color: #f7f7f7;
