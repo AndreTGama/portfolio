@@ -1,11 +1,11 @@
 import React from 'react';
 import Main from '../../components/Main';
-import ParallaxHeader from '../../components/Parallax/City';
+import { Header } from '../../components/Header/Header';
 
 export default function Home() {
     return (
         <Main>
-            <ParallaxHeader />
+            <Header />
             <section className="content">
                 <div>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
