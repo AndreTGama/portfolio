@@ -2,6 +2,8 @@
 export const Colors = {
     primary: "#FAF8F8",
     darkBlue: "#0B2447",
+    complementary: "#E0980B",
+    squary: "#E038A1",
     blue: "#19376D",
     lightBlue: "#576CBC",
     babyBlue: '#A5D7E8',
