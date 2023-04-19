@@ -8,26 +8,17 @@ type Props = {
 export function FloatingColors({ children } : Props): JSX.Element {
     return (
         <BackGround>
-            <div className="context">
-                <div className='children'>
-                    {children}
-                </div>
-            </div>
-            <div className="area" >
-                <ul className="circles">
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </div >
+            <span className='bubble' />
+            <span className='bubble' />
+            <span className='bubble' />
+            <span className='bubble' />
+            <span className='bubble' />
+            <span className='bubble' />
+            <span className='bubble' />
+            <span className='bubble' />
+            <span className='bubble' />
+            <span className='bubble' />
+            {children}
         </BackGround>
-        
     );
 }

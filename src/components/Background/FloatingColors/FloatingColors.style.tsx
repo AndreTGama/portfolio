@@ -2,129 +2,128 @@ import styled from "styled-components";
 import { Colors } from "../../../styles/Colors.styles";
 
 export const BackGround = styled.section`
-    .context {
-        width: 100%;
+    height: 100vh;
+    width: 100%;
+    background: #070356;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    @keyframes move {
+        100% {
+            transform: translate3d(0, 0, 1px) rotate(360deg);
+        }
     }
     
-    .context .children{
-        text-align: center;
-        color: #fff;
-        font-size: 50px;
-    }
-
-    .area{
-        background: ${Colors.darkBlue};  
-        background: -webkit-linear-gradient(to left, ${Colors.babyBlue}, ${Colors.blue});  
-    }
-
-    .circles{
+    .bubble {
+        width: 200px;
+        height: 200px;
+        border-radius: 50vmin;
+        backface-visibility: hidden;
         position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
+        animation: move;
+        animation-duration: 5;
+        animation-timing-function: linear;
+        animation-iteration-count: infinite;
     }
 
-    .circles li{
-        position: absolute;
-        display: block;
-        list-style: none;
-        width: 20px;
-        height: 20px;
-        background: rgba(255, 255, 255, 0.2);
-        animation: animate 25s linear infinite;
-        bottom: -150px;
+    .bubble:nth-child(0) {
+        color: #4531fb;
+        top: 40%;
+        left: 12%;
+        animation-duration: 41s;
+        animation-delay: -420s;
+        transform-origin: 13vw -18vh;
+        box-shadow: -100vmin 0 13.355905662563922vmin currentColor;
     }
 
-    .circles li:nth-child(1){
-        left: 25%;
-        width: 80px;
-        height: 80px;
-        animation-delay: 0s;
+    .bubble:nth-child(1) {
+        color: #3750f7;
+        top: 3%;
+        left: 74%;
+        animation-duration: 258s;
+        animation-delay: -36s;
+        transform-origin: -18vw -8vh;
+        box-shadow: -100vmin 0 13.360681488868838vmin currentColor;
     }
 
-    .circles li:nth-child(2){
-        left: 10%;
-        width: 20px;
-        height: 20px;
-        animation-delay: 2s;
-        animation-duration: 12s;
+    .bubble:nth-child(2) {
+        color: #4531fb;
+        top: 78%;
+        left: 62%;
+        animation-duration: 336s;
+        animation-delay: -140s;
+        transform-origin: -2vw -18vh;
+        box-shadow: -100vmin 0 12.748336195278345vmin currentColor;
     }
 
-    .circles li:nth-child(3){
-        left: 70%;
-        width: 20px;
-        height: 20px;
-        animation-delay: 4s;
-    }
-
-    .circles li:nth-child(4){
-        left: 40%;
-        width: 60px;
-        height: 60px;
-        animation-delay: 0s;
-        animation-duration: 18s;
-    }
-
-    .circles li:nth-child(5){
-        left: 65%;
-        width: 20px;
-        height: 20px;
-        animation-delay: 0s;
-    }
-
-    .circles li:nth-child(6){
-        left: 75%;
-        width: 110px;
-        height: 110px;
-        animation-delay: 3s;
-    }
-
-    .circles li:nth-child(7){
-        left: 35%;
-        width: 150px;
-        height: 150px;
-        animation-delay: 7s;
-    }
-
-    .circles li:nth-child(8){
+    .bubble:nth-child(3) {
+        color: #6a63fa;
+        top: 95%;
         left: 50%;
-        width: 25px;
-        height: 25px;
-        animation-delay: 15s;
-        animation-duration: 45s;
+        animation-duration: 439s;
+        animation-delay: -418s;
+        transform-origin: -16vw 19vh;
+        box-shadow: -100vmin 0 12.709849257053131vmin currentColor;
     }
 
-    .circles li:nth-child(9){
-        left: 20%;
-        width: 15px;
-        height: 15px;
-        animation-delay: 2s;
-        animation-duration: 35s;
+    .bubble:nth-child(4) {
+        color: #4531fb;
+        top: 59%;
+        left: 11%;
+        animation-duration: 350s;
+        animation-delay: -80s;
+        transform-origin: -15vw -5vh;
+        box-shadow: 100vmin 0 13.163452307272934vmin currentColor;
     }
 
-    .circles li:nth-child(10){
-        left: 85%;
-        width: 150px;
-        height: 150px;
-        animation-delay: 0s;
-        animation-duration: 11s;
+    .bubble:nth-child(5) {
+        color: #3750f7;
+        top: 95%;
+        left: 80%;
+        animation-duration: 294s;
+        animation-delay: -409s;
+        transform-origin: 18vw -1vh;
+        box-shadow: -100vmin 0 12.536711316675419vmin currentColor;
     }
 
-    @keyframes animate {
+    .bubble:nth-child(6) {
+        color: #4531fb;
+        top: 66%;
+        left: 3%;
+        animation-duration: 97s;
+        animation-delay: -398s;
+        transform-origin: -13vw 14vh;
+        box-shadow: -100vmin 0 12.894022581265338vmin currentColor;
+    }
 
-        0%{
-            transform: translateY(0) rotate(0deg);
-            opacity: 1;
-            border-radius: 100px;
-        }
+    .bubble:nth-child(7) {
+        color: #4531fb;
+        top: 28%;
+        left: 86%;
+        animation-duration: 354s;
+        animation-delay: -265s;
+        transform-origin: 16vw 25vh;
+        box-shadow: -100vmin 0 13.114395388057966vmin currentColor;
+    }
 
-        100%{
-            transform: translateY(-1000px) rotate(720deg);
-            opacity: 0;
-            border-radius: 100px;
-        }
+    .bubble:nth-child(8) {
+        color: #3750f7;
+        top: 44%;
+        left: 91%;
+        animation-duration: 252s;
+        animation-delay: -418s;
+        transform-origin: 22vw -11vh;
+        box-shadow: 100vmin 0 12.590694043320054vmin currentColor;
+    }
 
+    .bubble:nth-child(9) {
+        color: #4531fb;
+        top: 38%;
+        left: 22%;
+        animation-duration: 36s;
+        animation-delay: -134s;
+        transform-origin: -4vw 18vh;
+        box-shadow: -100vmin 0 12.631965797502232vmin currentColor;
     }
 `
