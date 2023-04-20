@@ -1,5 +1,5 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import { Colors } from './Colors.styles';
+import { Colors } from './Colors.style';
 
 type State = {
     firstColor?: string;

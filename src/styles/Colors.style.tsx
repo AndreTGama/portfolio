@@ -4,6 +4,7 @@ export const Colors = {
     darkBlue: "#0B2447",
     complementary: "#E0980B",
     squary: "#E038A1",
+    squaryDark: "#9900FF",
     blue: "#19376D",
     lightBlue: "#576CBC",
     babyBlue: '#A5D7E8',

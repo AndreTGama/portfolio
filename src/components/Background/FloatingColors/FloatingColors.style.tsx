@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { Colors } from "../../../styles/Colors.styles";
+import { Colors } from "../../../styles/Colors.style";
 
 export const BackGround = styled.section`
     height: 100vh;
     width: 100%;
-    background: #070356;
+    background: ${Colors.darkBlue};
     justify-content: center;
     align-items: center;
     display: flex;

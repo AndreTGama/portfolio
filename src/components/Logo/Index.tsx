@@ -1,7 +1,7 @@
 import React from 'react';
 import {
     ShadowWhite,
-} from '../../styles/Fonts.styles';
+} from '../../styles/Fonts.style';
 
 export function Logo(): JSX.Element {
 

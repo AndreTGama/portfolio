@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { Colors } from '../../styles/Colors.styles';
+import { Colors } from '../../styles/Colors.style';
 
 export const Box = styled.div`
     @keyframes mainBlock {
@@ -98,6 +98,7 @@ export const Title = styled(Box)`
     display: flex;
     align-items: center;
     height: 50px;
+    margin-bottom: 10px;
 `
 
 export const BlockTitle = styled(Title)`
@@ -141,9 +142,11 @@ export const TileSpan = styled.span`
 export const Role = styled(Box)`
     width: 100%;
     position: relative;
+    height: 30px;
     display: flex;
     align-items: center;
-    height: 30px;
+    justify-content: center;
+    margin-bottom: 10px;
 `
 export const BlockRole = styled(Role)`
     width: 0%;
