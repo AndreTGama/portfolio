@@ -2,11 +2,11 @@ import styled from "styled-components";
 import { Colors } from "../../../styles/Colors.style";
 
 export const BackGround = styled.section`
-    height: 100vh;
+    height: 300px;
     width: 100%;
     background: ${Colors.darkBlue};
     justify-content: center;
-    align-items: center;
+    padding-top: 200px;
     display: flex;
 
     @keyframes move {
