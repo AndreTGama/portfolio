@@ -6,7 +6,7 @@ import Profile from '../../assets/img/profile/profile-main.png'
 export default function About(): JSX.Element {
     return (
         <Global.ContainerCenter>
-            <Global.Row>
+            <Global.RowResponsive mediaMaxWidth={900} flexDirection={'column-reverse'}>
                 <Style.ProfileImg src={Profile} alt='Imagem de perfil de André Toledo Gama' />
                 <Style.Container>
                     <Style.TitleName>Andre Toledo Gama</Style.TitleName>
@@ -22,7 +22,7 @@ export default function About(): JSX.Element {
                         um deles foi o gerenciamento de toda a das escolas públicas de Cruzerio - SP
                     </Style.Description>
                 </Style.Container>
-            </Global.Row>
+            </Global.RowResponsive>
         </Global.ContainerCenter>
     );
 }

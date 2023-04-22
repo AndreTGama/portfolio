@@ -2,10 +2,14 @@ import styled from 'styled-components';
 
 export const ProfileImg = styled.img`
     width: 300px;
+    margin-bottom: 15px;
 `
 
 export const Container = styled.div`
     padding: 0 0 0 5em;
+    @media (max-width: 900px) {
+        padding: 0;
+    }
 `
 
 export const TitleName = styled.h1`

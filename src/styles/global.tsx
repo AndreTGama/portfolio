@@ -7,6 +7,11 @@ type State = {
     linearEffect?: boolean;
 };
 
+type StateRow = {
+    mediaMaxWidth: number;
+    flexDirection: string;
+};
+
 export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
@@ -30,10 +35,18 @@ export const GlobalStyle = createGlobalStyle`
 
 export const Row = styled.div`
     display: flex;
-    align-items: center;
     justify-content: space-between;
     align-items: center;
 `;
+
+export const RowResponsive = styled(Row)<StateRow>`
+    @media (max-width: ${props => props.mediaMaxWidth ?? '900'}px) {
+        display: flex;
+        flex-direction: ${props => props.flexDirection ?? 'column'};
+        text-align: center;
+        justify-content: center;
+    }
+`
 
 export const Container = styled.section<State>`
     padding: 3em;
