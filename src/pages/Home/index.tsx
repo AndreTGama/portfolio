@@ -7,8 +7,10 @@ import ParticlesBackground from '../../components/Background/Particles/Particles
 export default function Home() {
     return (
         <Main>
-            <ParticlesBackground />
-            <Header />
+            <section id='header'>
+                <ParticlesBackground />
+                <Header />
+            </section>
             <About />
         </Main>
     );

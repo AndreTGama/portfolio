@@ -2,6 +2,7 @@ import React from 'react';
 import * as Style from './About.style';
 import * as Global from '../../styles/global'
 import Profile from '../../assets/img/profile/profile-main.png'
+import Card from '../../components/BarProgress/Card/Card'
 
 export default function About(): JSX.Element {
     return (
@@ -23,6 +24,7 @@ export default function About(): JSX.Element {
                     </Style.Description>
                 </Style.Container>
             </Global.RowResponsive>
+            <Card title='PHP'/>
         </Global.ContainerCenter>
     );
 }
