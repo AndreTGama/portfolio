@@ -1,6 +1,16 @@
 import styled from "styled-components";
 import { Colors } from '../../styles/Colors.style';
 
+export const Container = styled.div`
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 350px;
+    top: 150px;
+`;
+
 export const Box = styled.div`
     @keyframes mainBlock {
         0% {
@@ -97,6 +107,7 @@ export const Title = styled(Box)`
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
     height: 50px;
     margin-bottom: 10px;
 `

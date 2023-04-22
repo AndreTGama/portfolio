@@ -6,6 +6,7 @@ type State = {
     secondColor?: string;
     linearEffect?: boolean;
 };
+
 export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
@@ -26,14 +27,29 @@ export const GlobalStyle = createGlobalStyle`
         width: 100%;
     }
 `;
+
 export const Row = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    align-items: center;
 `;
+
 export const Container = styled.section<State>`
-    padding: 2rem;
+    padding: 3em;
     width: 100%;
+    height: 100%;
+    ${props =>
+        props.linearEffect
+            ? `background: linear-gradient(${props.firstColor}, ${props.secondColor});`
+            : `background-color: ${
+                props.firstColor ? props.firstColor : '#FFF'
+            };
+    `};
+`;
+
+export const ContainerCenter = styled.section<State>`
+    padding: 3em 10em;
     height: 100%;
     ${props =>
         props.linearEffect
