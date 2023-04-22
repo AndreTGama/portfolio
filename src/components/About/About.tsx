@@ -5,7 +5,7 @@ import Profile from '../../assets/img/profile/profile-main.png'
 
 export default function About(): JSX.Element {
     return (
-        <Global.ContainerCenter>
+        <Global.ContainerCenter id='about'>
             <Global.RowResponsive mediaMaxWidth={900} flexDirection={'column-reverse'}>
                 <Style.ProfileImg src={Profile} alt='Imagem de perfil de André Toledo Gama' />
                 <Style.Container>
