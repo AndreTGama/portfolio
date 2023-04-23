@@ -1,19 +1,26 @@
 import React from 'react';
 import * as Style from './Card.style';
+import * as Global from '../../../styles/global';
+
+import MoreInfo from '../../Icons/MoreInfo/MoreInfo';
 
 type Props = {
-    title?: string,
-    list?: [],
-    color?: string
+    title: string,
+    information: string,
+    color: string,
+    percentage: string
 }
 
-export default function Index({title, list, color} : Props) {
+export default function Index({title, information, color, percentage} : Props) {
 
   return (
     <Style.Container>
-        <Style.Label>{title}</Style.Label>
+        <Global.Row>
+          <Style.Label>{title}</Style.Label>
+          <MoreInfo information={information}/>
+        </Global.Row>
         <Style.Progress>
-            <Style.BarProgress color='#8943D9' percentage='5%'>5%</Style.BarProgress>
+            <Style.BarProgress color={color} percentage={percentage}>5%</Style.BarProgress>
         </Style.Progress>
     </Style.Container>
   );

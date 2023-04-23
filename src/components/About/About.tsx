@@ -22,9 +22,16 @@ export default function About(): JSX.Element {
                         para o Power Bi, também atuei nos desenvolvimentos de sistemas de gerenciamentos, 
                         um deles foi o gerenciamento de toda a das escolas públicas de Cruzerio - SP
                     </Style.Description>
+                    <Global.RowResponsive mediaMaxWidth={900} flexDirection={'column-reverse'}>
+                        <Card title='PHP' color='#8943D9' percentage='5%' information=''/>
+                        <Card title='PHP' color='#8943D9' percentage='5%' information=''/>
+                    </Global.RowResponsive>
+                    <Global.RowResponsive mediaMaxWidth={900} flexDirection={'column-reverse'}>
+                        <Card title='PHP' color='#8943D9' percentage='5%' information=''/>
+                        <Card title='PHP' color='#8943D9' percentage='5%' information=''/>
+                    </Global.RowResponsive>
                 </Style.Container>
             </Global.RowResponsive>
-            <Card title='PHP'/>
         </Global.ContainerCenter>
     );
 }
