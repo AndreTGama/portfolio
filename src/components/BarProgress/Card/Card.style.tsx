@@ -26,6 +26,8 @@ export const Label = styled.label`
 `
 
 export const BarProgress = styled.div<Props>`
+    color: white;
+    text-align: center;
     background-color: ${props => props.color ?? '#3E4BF0'};
     width: ${props => props.percentage ?? '50%'};
     height: 16px;

@@ -13,7 +13,7 @@ export default function Index({title, list, color} : Props) {
     <Style.Container>
         <Style.Label>{title}</Style.Label>
         <Style.Progress>
-            <Style.BarProgress color='#8943D9' percentage='5%'/>
+            <Style.BarProgress color='#8943D9' percentage='5%'>5%</Style.BarProgress>
         </Style.Progress>
     </Style.Container>
   );
