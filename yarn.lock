@@ -9307,6 +9307,11 @@
     "for-each" "^0.3.3"
     "is-typed-array" "^1.1.9"
 
+"typed.js@^2.0.15":
+  "integrity" "sha512-kQNtvm6+dEcUc5sdskEgV17rsdvimQNsDRHnp8PasBY85dYqVoo4TCanakSkfherMN+lZEko5ccMMKJpuR42Fw=="
+  "resolved" "https://registry.npmjs.org/typed.js/-/typed.js-2.0.15.tgz"
+  "version" "2.0.15"
+
 "typedarray-to-buffer@^3.1.5":
   "integrity" "sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q=="
   "resolved" "https://registry.npmjs.org/typedarray-to-buffer/-/typedarray-to-buffer-3.1.5.tgz"
