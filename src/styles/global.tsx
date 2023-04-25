@@ -66,19 +66,13 @@ export const Container = styled(Section)<State>`
 `;
 
 export const ContainerCenter = styled.section<State>`
-    padding: 3em 10em;
-    height: 100%;
-    ${props =>
-        props.linearEffect
-            ? `background: linear-gradient(${props.firstColor}, ${props.secondColor});`
-            : `background-color: ${
-                props.firstColor ? props.firstColor : '#FFF'
-            };
-    `};
+    padding: 15px;
+    display: flex;
+    justify-content: space-evenly;;
+    align-items: center;
     @media (max-width: 900px) {
-        padding: 0;
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
         justify-content: center;
     }

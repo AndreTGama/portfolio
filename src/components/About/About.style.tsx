@@ -2,13 +2,14 @@ import styled from 'styled-components';
 
 export const ProfileImg = styled.img`
     width: 300px;
+    height: 100%;
     margin-bottom: 15px;
 `
 
 export const Container = styled.div`
-    padding: 0 0 0 5em;
+    width: 40%;
     @media (max-width: 900px) {
-        padding: 0;
+        width: 100%;
     }
 `
 
