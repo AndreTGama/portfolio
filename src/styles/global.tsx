@@ -12,6 +12,12 @@ type StateRow = {
     flexDirection: string;
 };
 
+export const Section = styled.section`
+    margin-bottom: 15px;
+    width: 100%;
+    height: 100%;
+`
+
 export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
@@ -48,10 +54,8 @@ export const RowResponsive = styled(Row)<StateRow>`
     }
 `
 
-export const Container = styled.section<State>`
+export const Container = styled(Section)<State>`
     padding: 3em;
-    width: 100%;
-    height: 100%;
     ${props =>
         props.linearEffect
             ? `background: linear-gradient(${props.firstColor}, ${props.secondColor});`
@@ -71,4 +75,11 @@ export const ContainerCenter = styled.section<State>`
                 props.firstColor ? props.firstColor : '#FFF'
             };
     `};
+    @media (max-width: 900px) {
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
 `;

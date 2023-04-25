@@ -1,8 +1,9 @@
 import React from 'react';
 import * as Style from './About.style';
-import * as Global from '../../styles/global'
-import Profile from '../../assets/img/profile/profile-main.png'
-import Card from '../../components/BarProgress/Card/Card'
+import * as Global from '../../styles/global';
+import Profile from '../../assets/img/profile/profile-main.png';
+import Card from '../../components/BarProgress/Card/Card';
+import Stacks from '../../components/Icons/Stacks/Stacks';
 
 export default function About(): JSX.Element {
     return (
@@ -30,6 +31,7 @@ export default function About(): JSX.Element {
                         <Card title='PHP' color='#8943D9' percentage='5%' information=''/>
                         <Card title='PHP' color='#8943D9' percentage='5%' information=''/>
                     </Global.RowResponsive>
+                    <Stacks />
                 </Style.Container>
             </Global.RowResponsive>
         </Global.ContainerCenter>

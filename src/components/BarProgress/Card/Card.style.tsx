@@ -9,7 +9,7 @@ type Props = {
 export const Container = styled.div`
     width: 100%;
     text-align: left;
-    padding: 10px;
+    padding: 10px 15px 10px 0;
 `
 
 export const Progress = styled(Container)`

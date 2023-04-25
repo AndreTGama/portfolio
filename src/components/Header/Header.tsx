@@ -1,9 +1,11 @@
 import React, { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import * as Style from './Header.style';
+import * as Global from '../../styles/global';
 import { SocialMedia } from '../Icons/SocialMedia/SocialMedia';
 import { SocialLinks } from '../../assets/data/profile/SocialMedia'; 
 import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
+import ParticlesBackground from '../Background/Particles/ParticlesBackground';
 
 export default function Header(): JSX.Element {
     const el = useRef(null);
@@ -22,25 +24,28 @@ export default function Header(): JSX.Element {
         };
       }, []);
     return (
-        <Style.Container>
-            <Style.Box>
-                <Style.Title>
-                    <Style.BlockTitle />
-                    <Style.TitleH>
-                        Bem-vindo
-                        <Style.TileSpan/>
-                    </Style.TitleH>
-                </Style.Title>
-                <Style.Role>
-                    <Style.BlockRole />
-                    <Style.RoleP ref={el} />
-                </Style.Role>
-                <Style.Role>
-                    <SocialMedia url={SocialLinks.instagram} iconName={faInstagram} />
-                    <SocialMedia url={SocialLinks.linkedin} iconName={faLinkedin} />
-                    <SocialMedia url={SocialLinks.github} iconName={faGithub} />          
-                </Style.Role>
-            </Style.Box>
-        </Style.Container>
+        <Global.Section>
+            <ParticlesBackground />
+            <Style.Container>
+                <Style.Box>
+                    <Style.Title>
+                        <Style.BlockTitle />
+                        <Style.TitleH>
+                            Bem-vindo
+                            <Style.TileSpan/>
+                        </Style.TitleH>
+                    </Style.Title>
+                    <Style.Role>
+                        <Style.BlockRole />
+                        <Style.RoleP ref={el} />
+                    </Style.Role>
+                    <Style.Role>
+                        <SocialMedia url={SocialLinks.instagram} iconName={faInstagram} />
+                        <SocialMedia url={SocialLinks.linkedin} iconName={faLinkedin} />
+                        <SocialMedia url={SocialLinks.github} iconName={faGithub} />          
+                    </Style.Role>
+                </Style.Box>
+            </Style.Container>   
+        </Global.Section>
     );
 }
