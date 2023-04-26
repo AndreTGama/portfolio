@@ -1,5 +1,5 @@
 import React from 'react';
-import * as Style from './Card.style';
+import * as Style from './Bar.style';
 import * as Global from '../../../styles/global';
 
 import MoreInfo from '../../Icons/MoreInfo/MoreInfo';
@@ -20,7 +20,7 @@ export default function Index({title, information, color, percentage} : Props) {
           <MoreInfo information={information}/>
         </Global.Row>
         <Style.Progress>
-            <Style.BarProgress color={color} percentage={percentage}>5%</Style.BarProgress>
+            <Style.BarProgress color={color} percentage={percentage}>{percentage}</Style.BarProgress>
         </Style.Progress>
     </Style.Container>
   );
