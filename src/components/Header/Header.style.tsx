@@ -171,10 +171,9 @@ export const BlockRole = styled(Role)`
 export const RoleP = styled.p`
     animation: secFadeIn 2s forwards;
     animation-delay: 3.2s;
-    opacity: 0;
     font-weight: 400;
     font-family: 'Lato';
-    color: #ffffff;
+    color: #fff;
     font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 5px;

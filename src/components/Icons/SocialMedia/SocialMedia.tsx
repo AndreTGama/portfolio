@@ -5,15 +5,17 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 type Props = {
     iconName: IconProp
+    label: string
     url: string
 }
 
-export function SocialMedia({ url, iconName } : Props): JSX.Element {
+export function SocialMedia({ url, label, iconName } : Props): JSX.Element {
     return (
         <Style.Anchor
             href={url}
             target='_blank'
             rel='noreferrer'
+            aria-label={label}
         >
             <FontAwesomeIcon 
                 icon={iconName} 

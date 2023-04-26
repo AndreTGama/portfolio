@@ -17,7 +17,7 @@ export default function Index({title, information, color, percentage} : Props) {
     <Style.Container>
         <Global.Row>
           <Style.Label>{title}</Style.Label>
-          <MoreInfo information={information}/>
+          <MoreInfo information={information} label={`Mais informação sobre ${title}`}/>
         </Global.Row>
         <Style.Progress>
             <Style.BarProgress color={color} percentage={percentage}>{percentage}</Style.BarProgress>

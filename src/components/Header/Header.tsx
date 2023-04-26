@@ -15,6 +15,7 @@ export default function Header(): JSX.Element {
             strings: ['Eu sou:', 'Eu sou: André Toledo Gama', 'Eu sou: Back-end Developer'],
             typeSpeed: 0,
             backSpeed: 0,
+            startDelay: 4000,
             smartBackspace: true,
             loop: false
         });
@@ -40,9 +41,9 @@ export default function Header(): JSX.Element {
                         <Style.RoleP ref={el} />
                     </Style.Role>
                     <Style.Role>
-                        <SocialMedia url={SocialLinks.instagram} iconName={faInstagram} />
-                        <SocialMedia url={SocialLinks.linkedin} iconName={faLinkedin} />
-                        <SocialMedia url={SocialLinks.github} iconName={faGithub} />          
+                        <SocialMedia url={SocialLinks.instagram} label={'Instaram do André Gama'} iconName={faInstagram} />
+                        <SocialMedia url={SocialLinks.linkedin}  label={'Linkedin do André Gama'} iconName={faLinkedin} />
+                        <SocialMedia url={SocialLinks.github}  label={'Github do André Gama'} iconName={faGithub} />          
                     </Style.Role>
                 </Style.Box>
             </Style.Container>   

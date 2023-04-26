@@ -6,6 +6,7 @@ import * as Style from './MoreInfo.style';
 
 type Props = {
     information: string
+    label: string
 }
 
 function sendAlert(information: string) {
@@ -16,9 +17,9 @@ function sendAlert(information: string) {
 }
 
 
-export default function Index({ information } : Props): JSX.Element {
+export default function Index({ information, label } : Props): JSX.Element {
     return (
-        <Style.Button onClick={() => sendAlert( information )}>
+        <Style.Button onClick={() => sendAlert( information )} aria-label={label}>
             <FontAwesomeIcon icon={faCircleInfo} />   
         </Style.Button>
     );
