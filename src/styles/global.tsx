@@ -1,5 +1,4 @@
 import styled, { createGlobalStyle } from 'styled-components';
-import { Colors } from './Colors.style';
 
 type State = {
     firstColor?: string;
@@ -21,21 +20,16 @@ export const Section = styled.section`
 export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
-        font-family: 'Montserrat', sans-serif;
+        font-family: 'Lato';
+        color: rgb(81, 81, 81);
     }
     body {
-        background-color: ${Colors.primary};
+        background: linear-gradient(rgb(247, 247, 247), rgb(209, 213, 255));
         overflow-x: hidden;
     }
     a {
         color: inherit;
         text-decoration: inherit;
-    }
-    .content {
-        position: relative;
-        z-index: 2;
-        background-color: ${Colors.primary};
-        width: 100%;
     }
 `;
 
@@ -56,13 +50,6 @@ export const RowResponsive = styled(Row)<StateRow>`
 
 export const Container = styled(Section)<State>`
     padding: 3em;
-    ${props =>
-        props.linearEffect
-            ? `background: linear-gradient(${props.firstColor}, ${props.secondColor});`
-            : `background-color: ${
-                props.firstColor ? props.firstColor : '#FFF'
-            };
-    `};
 `;
 
 export const ContainerCenter = styled.section<State>`

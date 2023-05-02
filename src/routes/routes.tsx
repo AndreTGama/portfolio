@@ -1,4 +1,3 @@
-import React from 'react';
 import { RouteObject, createBrowserRouter } from 'react-router-dom';
 import Login from '../pages/Login';
 import Home from '../pages/Home';

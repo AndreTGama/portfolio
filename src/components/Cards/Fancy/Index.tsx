@@ -4,7 +4,6 @@ import * as Style from './Fancy.style'
 export default function Index() {
   return (
     <>
-        <Star />
         <Style.Container>
             <Style.Box>
                 <div className="flip-box">
@@ -15,8 +14,11 @@ export default function Index() {
                         </Style.Inner>
                     </div>
                     <div className="flip-box-back">
+                        <Style.Star>
+                            <Star value={0.3}/>
+                        </Style.Star>
                         <Style.Inner>
-                            <Style.Header>Custom Domains</Style.Header>
+                        <Style.Header>Custom Domains</Style.Header>
                             <Style.Paragraph>A short sentence describing this callout is.</Style.Paragraph>
                         </Style.Inner>
                     </div>

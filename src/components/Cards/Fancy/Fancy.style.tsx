@@ -11,7 +11,7 @@ export const Container = styled.div`
 
     .flip-box-front,
     .flip-box-back {
-        background-image: linear-gradient(to right, #0f0c29, #302b63, #24243e);;
+        background-image: linear-gradient(to right, #8943D9, #6E5CD9, #302b63);
         background-size: cover;
         background-position: center;
         border-radius: 8px;
@@ -80,6 +80,12 @@ export const Container = styled.div`
         padding: 15px 20px;
         text-transform: uppercase;
     }
+`
+
+export const Star = styled.div`
+    display: flex;
+    justify-content: end;
+    padding-right: 15px;
 `
 
 export const Box = styled.div`
