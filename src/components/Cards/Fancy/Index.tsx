@@ -1,4 +1,5 @@
 import Star from '../../Icons/Star/Index'
+import { Index as Button } from '../../Button/Wave/Index'
 import * as Style from './Fancy.style'
 
 type Props = {
@@ -26,14 +27,6 @@ export default function Index({ name, link, stars, language, image, description}
                             <Style.Paragraph>
                                 {description}
                             </Style.Paragraph>
-                            <Style.Footer>
-                                <Style.Languages>
-                                    {language.map((item, i) => {
-                                        return <span>{`#${item}`}</span>
-                                    })}
-                                </Style.Languages>
-                                <button> Ver mais</button>
-                            </Style.Footer>
                         </Style.Inner>
                     </div>
                     <div className="flip-box-back">
@@ -44,10 +37,19 @@ export default function Index({ name, link, stars, language, image, description}
                             </Style.Header>
                             <Style.Img src={image} />
                             <Style.Footer>
-                                {language.map((item, i) => {
-                                    return item;
-                                })}
-                                <button> Ver mais</button>
+                                <Style.Languages>
+                                    {language.map((item, i) => {
+                                        return <span>{`#${item}`}</span>
+                                    })}
+                                </Style.Languages>
+                                <Button 
+                                    text='Saiba Mais'
+                                    label='Botão para redirecionar ao GitHub'
+                                    url={link}
+                                    fontColor={'black'}
+                                    borderColor={'white'}
+                                    backgroundColor={'rgb(137, 67, 217)'}
+                                />
                             </Style.Footer>
                         </Style.Inner>
                     </div>

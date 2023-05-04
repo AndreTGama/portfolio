@@ -13,7 +13,7 @@ export const Container = styled.div`
 
     .flip-box-front,
     .flip-box-back {
-        background-image: url(${BackGround});
+        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(${BackGround});
         background-size: cover;
         background-position: center;
         border-radius: 8px;
