@@ -21,7 +21,6 @@ export const GlobalStyle = createGlobalStyle`
     *{
         margin: 0;
         font-family: 'Lato';
-        color: rgb(81, 81, 81);
     }
     body {
         background: linear-gradient(rgb(247, 247, 247), rgb(209, 213, 255));

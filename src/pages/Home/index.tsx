@@ -6,7 +6,7 @@ import Projects from '../../components/Projects/Index';
 export default function Home() {
     return (
         <Main>
-            <Header />
+            {/* <Header /> */}
             <About />
             <Projects />
         </Main>

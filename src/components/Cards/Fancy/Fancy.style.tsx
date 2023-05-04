@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import BackGround from '../../../assets/img/hex.jpg';
 
 export const Container = styled.div`
+    color: white;
     .flip-box {
         -ms-transform-style: preserve-3d;
         transform-style: preserve-3d;
@@ -11,11 +13,11 @@ export const Container = styled.div`
 
     .flip-box-front,
     .flip-box-back {
-        background-image: linear-gradient(to right, #8943D9, #6E5CD9, #302b63);
+        background-image: url(${BackGround});
         background-size: cover;
         background-position: center;
         border-radius: 8px;
-        min-height: 300px;
+        min-height: 400px;
         -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
         transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
         -webkit-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
@@ -82,12 +84,6 @@ export const Container = styled.div`
     }
 `
 
-export const Star = styled.div`
-    display: flex;
-    justify-content: end;
-    padding-right: 15px;
-`
-
 export const Box = styled.div`
     position: relative;
     -webkit-backface-visibility: hidden;
@@ -96,17 +92,9 @@ export const Box = styled.div`
     max-width: 100%;
 `
 
-export const Paragraph = styled.p`
-    font-size: 20px;
-    line-height: 1.5em;
-`
-
 export const Inner = styled.div`
-    color: white;
     position: absolute;
-    left: 0;
     width: 100%;
-    padding: 60px;
     outline: 1px solid transparent;
     -webkit-perspective: inherit;
     perspective: inherit;
@@ -114,9 +102,56 @@ export const Inner = styled.div`
     transform: translateY(-50%) translateZ(60px) scale(.94);
     -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
     -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
-    top: 50%;
+    top: 45%;
 ` 
-
-export const Header = styled.span`
+export const Header = styled.div`
     font-size: 34px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 15px 15px 5px 5px;
+`
+export const Paragraph = styled.p`
+    font-size: 20px;
+    padding: 15px;
+    text-align: justify;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 23px;
+    max-height: 32px; 
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+`
+
+export const Img = styled.img`
+    width: 390px;
+    height: 100%;
+    padding: 10px;
+`
+
+export const Footer = styled.div`
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+`
+
+export const Languages = styled.div`
+    display: flex;
+    margin-bottom: 15px;
+    span {
+        margin-right: 10px;
+    }
+    span:nth-child(1) {
+        color: #8b00ff;
+    }
+    span:nth-child(2) {
+        color: #1182e6;
+    }
+    span:nth-child(3) {
+        color: #11d278;
+    }
+    span:nth-child(4) {
+        color: #11d278;
+    }
 `
