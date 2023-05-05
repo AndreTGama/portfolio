@@ -1,5 +1,5 @@
 import Star from '../../Icons/Star/Index'
-import { Index as Button } from '../../Button/Wave/Index'
+import { Index as Button } from '../../Button/Drop/Index'
 import * as Style from './Fancy.style'
 
 type Props = {
@@ -18,7 +18,7 @@ export default function Index({ name, link, stars, language, image, description}
             <Style.Box>
                 <div className="flip-box">
                     <div className="flip-box-front">
-                        <Style.Inner>
+                        <Style.InnerFront>
                             <Style.Header>
                                 <Style.Header>{name}</Style.Header>
                                 <Star value={stars}/>
@@ -27,10 +27,10 @@ export default function Index({ name, link, stars, language, image, description}
                             <Style.Paragraph>
                                 {description}
                             </Style.Paragraph>
-                        </Style.Inner>
+                        </Style.InnerFront>
                     </div>
                     <div className="flip-box-back">
-                        <Style.Inner>
+                        <Style.InnerBack>
                             <Style.Header>
                                 <Style.Header>{name}</Style.Header>
                                 <Star value={stars}/>
@@ -51,7 +51,7 @@ export default function Index({ name, link, stars, language, image, description}
                                     backgroundColor={'rgb(137, 67, 217)'}
                                 />
                             </Style.Footer>
-                        </Style.Inner>
+                        </Style.InnerBack>
                     </div>
                 </div>
             </Style.Box>

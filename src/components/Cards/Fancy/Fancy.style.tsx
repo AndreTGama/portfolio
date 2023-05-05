@@ -1,8 +1,9 @@
 import styled from 'styled-components';
-import BackGround from '../../../assets/img/hex.jpg';
+import BackGround from '../../../assets/img/background-gif.gif';
 
 export const Container = styled.div`
     color: white;
+    margin-bottom: 15px;
     .flip-box {
         -ms-transform-style: preserve-3d;
         transform-style: preserve-3d;
@@ -13,9 +14,7 @@ export const Container = styled.div`
 
     .flip-box-front,
     .flip-box-back {
-        background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url(${BackGround});
-        background-size: cover;
-        background-position: center;
+        background-image: linear-gradient(rgba(35, 0, 38, 0.9), rgba(35, 0, 38, 0.9)), url(${BackGround});
         border-radius: 8px;
         min-height: 400px;
         -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
@@ -32,6 +31,8 @@ export const Container = styled.div`
         -webkit-transform-style: preserve-3d;
         -ms-transform-style: preserve-3d;
         transform-style: preserve-3d;
+        box-shadow: rgb(193, 193, 193) 5px 10px
+
     }
 
     .flip-box:hover .flip-box-front {
@@ -41,6 +42,7 @@ export const Container = styled.div`
         -webkit-transform-style: preserve-3d;
         -ms-transform-style: preserve-3d;
         transform-style: preserve-3d;
+        box-shadow: rgb(193, 193, 193) 5px 10px
     }
 
     .flip-box-back {
@@ -55,6 +57,7 @@ export const Container = styled.div`
         -webkit-transform-style: preserve-3d;
         -ms-transform-style: preserve-3d;
         transform-style: preserve-3d;
+        box-shadow: rgb(193, 193, 193) 5px 10px
     }
 
     .flip-box:hover .flip-box-back {
@@ -64,37 +67,18 @@ export const Container = styled.div`
         -webkit-transform-style: preserve-3d;
         -ms-transform-style: preserve-3d;
         transform-style: preserve-3d;
-    }
-
-    .flip-box-img {
-        margin-top: 25px;
-    }
-
-    .flip-box-button {
-        background-color: transparent;
-        border: 2px solid #fff;
-        border-radius: 2px;
-        color: #fff;
-        cursor: pointer;
-        font-size: 20px;
-        font-weight: bold;
-        margin-top: 25px;
-        padding: 15px 20px;
-        text-transform: uppercase;
+        box-shadow: rgb(193, 193, 193) 5px 10px
     }
 `
 
 export const Box = styled.div`
     position: relative;
     -webkit-backface-visibility: hidden;
-    width: 415px;
-    margin-bottom: 35px;
-    max-width: 100%;
+    width: 300px;
 `
 
 export const Inner = styled.div`
     position: absolute;
-    width: 100%;
     outline: 1px solid transparent;
     -webkit-perspective: inherit;
     perspective: inherit;
@@ -102,14 +86,24 @@ export const Inner = styled.div`
     transform: translateY(-50%) translateZ(60px) scale(.94);
     -webkit-transform: translateY(-50%) translateZ(60px) scale(.94);
     -ms-transform: translateY(-50%) translateZ(60px) scale(.94);
-    top: 45%;
+    padding:10px;
 ` 
+
+export const InnerFront = styled(Inner)`
+    top: 144px;
+`
+
+export const InnerBack = styled(Inner)`
+    top: 180px;
+`
+
 export const Header = styled.div`
     font-size: 34px;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
     padding: 15px 15px 5px 5px;
+    margin-bottom: 15px;
 `
 export const Paragraph = styled.p`
     font-size: 20px;
@@ -125,20 +119,21 @@ export const Paragraph = styled.p`
 `
 
 export const Img = styled.img`
-    width: 390px;
+    width: 280px;
     height: 100%;
-    padding: 10px;
+    margin-bottom: 15px;
 `
 
 export const Footer = styled.div`
     display: flex;
     flex-direction: column;
     padding: 15px;
+    margin-bottom: 15px;
 `
 
 export const Languages = styled.div`
     display: flex;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     span {
         margin-right: 10px;
     }
