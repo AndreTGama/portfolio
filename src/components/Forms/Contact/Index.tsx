@@ -1,14 +1,43 @@
 import ButtonGeneric from '../../Button/Drop/Generic/Index';
 import * as Style from './Index.style';
+import Input from '../../Inputs/Text/Index';
+import TextArea from '../../Inputs/TextArea/Index';
+import { useState } from 'react';
 
 export default function Header(): JSX.Element {
-   
+    const [ name, setName ]   = useState('');
+    const [ email, setEmail ] = useState('');
+    const [ text, setText ]   = useState('');
+    
     return (
         <Style.Container>
             <Style.Form>
-                <input type="text" className="form-control" id="name" placeholder="NAME" name="name" value="" required />
-                <input type="email" className="form-control" id="email" placeholder="EMAIL" name="email" value="" required />
-                <textarea className="form-control" placeholder="MESSAGE" name="message" required></textarea>
+                <Input
+                    type={'text'} 
+                    className={'className'}
+                    id={'id'}
+                    placeholder={'placeholder'}
+                    required={true}
+                    value={name}
+                    setValue={setName}
+                />
+                <Input
+                    type={'email'} 
+                    className={'className'}
+                    id={'id'}
+                    placeholder={'placeholder'}
+                    required={true}
+                    value={email}
+                    setValue={setEmail}
+                />
+                <TextArea  
+                    className={'className'}
+                    id={'id'}
+                    placeholder={'Text'}
+                    required={true}
+                    value={text}
+                    setValue={setText}
+                />
                 <ButtonGeneric 
                     text={'Enviar'}
                     label={'Botão para enviar o formulário'}
