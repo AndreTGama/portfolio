@@ -1,5 +1,5 @@
 import Star from '../../Icons/Star/Index'
-import { Index as Button } from '../../Button/Drop/Index'
+import ButtonAnchor from '../../Button/Drop/Anchor/Index'
 import * as Style from './Fancy.style'
 
 type Props = {
@@ -42,7 +42,7 @@ export default function Index({ name, link, stars, language, image, description}
                                         return <span>{`#${item}`}</span>
                                     })}
                                 </Style.Languages>
-                                <Button 
+                                <ButtonAnchor 
                                     text='Saiba Mais'
                                     label='Botão para redirecionar ao GitHub'
                                     url={link}

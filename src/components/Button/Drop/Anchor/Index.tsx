@@ -8,7 +8,7 @@ type Props = {
     borderColor: string,
     backgroundColor: string
 }
-export function Index({ text, label, url, fontColor, borderColor, backgroundColor } : Props) {
+export default function ButtonAnchor({ text, label, url, fontColor, borderColor, backgroundColor } : Props) {
   return (
     <Style.Button
         target='_blank'
