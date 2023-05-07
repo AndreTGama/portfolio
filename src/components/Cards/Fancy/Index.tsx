@@ -38,7 +38,7 @@ export default function Index({ name, link, stars, language, image, description}
                             <Style.Img src={image} />
                             <Style.Footer>
                                 <Style.Languages>
-                                    {language.map((item, i) => {
+                                    {language.map((item) => {
                                         return <span>{`#${item}`}</span>
                                     })}
                                 </Style.Languages>

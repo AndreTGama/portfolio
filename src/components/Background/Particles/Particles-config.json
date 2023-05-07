@@ -6,7 +6,7 @@
         "enable": false
     },
     "style": {
-        "height": "500px"
+        "height": "550px"
     },
     "fpsLimit": 120,
     "interactivity": {

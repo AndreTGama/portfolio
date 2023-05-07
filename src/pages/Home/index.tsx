@@ -7,7 +7,7 @@ import Contact from '../../components/Contact/Index';
 export default function Home() {
     return (
         <Main>
-            {/* <Header /> */}
+            <Header />
             <About />
             <Projects />
             <Contact />

@@ -25,7 +25,7 @@ export default function Header(): JSX.Element {
         };
       }, []);
     return (
-        <Global.Section>
+        <Style.Section>
             <ParticlesBackground />
             <Style.Container>
                 <Style.Box>
@@ -47,6 +47,6 @@ export default function Header(): JSX.Element {
                     </Style.Role>
                 </Style.Box>
             </Style.Container>   
-        </Global.Section>
+        </Style.Section>
     );
 }
