@@ -1,9 +1,9 @@
 import styled from 'styled-components'
 
 export const Divisor = styled.div` 
-    display:inline-block;
-    width:100px; 
-    position:relative; 
+    display: inline-block;
+    width: 20px; 
+    position: relative; 
 
     .right { 
         content:''; 

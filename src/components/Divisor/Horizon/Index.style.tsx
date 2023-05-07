@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-export const Divisor = styled.div` 
+export const Divisor = styled.div`
     width:100%; 
     position:relative; 
     

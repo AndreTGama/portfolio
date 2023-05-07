@@ -6,13 +6,7 @@ export const Column = styled.div`
     flex-direction: column;
     width: 100%;
     padding: 50px;
-
-    @media (max-width: 740px) {
-        hr {
-            width: 50%;
-            margin: auto;
-        }
-    }
+    align-items: center;
 `;
 
 export const Row = styled.div`
