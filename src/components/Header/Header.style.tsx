@@ -172,12 +172,12 @@ export const BlockRole = styled(Role)`
     display: flex;
 `
 export const RoleP = styled.p`
-    animation: secFadeIn 2s forwards;
+    animation: 2s forwards;
     animation-delay: 3.2s;
     font-weight: 400;
     font-family: 'Lato';
-    color: #fff;
-    font-size: 12px;
+    color: white;
+    font-size: 14px;
     text-transform: uppercase;
     letter-spacing: 5px;
 `

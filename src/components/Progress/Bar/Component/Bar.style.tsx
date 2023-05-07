@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { Colors } from '../../../styles/Colors.style';
+import { Colors } from '../../../../styles/Colors.style';
 
 type Props = {
     color: string

@@ -1,8 +1,8 @@
 import React from 'react';
 import * as Style from './Bar.style';
-import * as Global from '../../../styles/global';
+import * as Global from '../../../../styles/global';
 
-import MoreInfo from '../../Icons/MoreInfo/MoreInfo';
+import MoreInfo from '../../../Icons/MoreInfo/MoreInfo';
 
 type Props = {
     title: string,

@@ -1,11 +1,12 @@
-import * as Global from '../../styles/global';
-import Bar from './BarComponent/Bar';
-import { Stacks } from '../../assets/data/Stacks/Stacks'
+import * as Global from '../../../styles/global';
+import * as Style from './Index.style'
+import Bar from './Component/Bar';
+import { Stacks } from '../../../assets/data/Stacks/Stacks'
 
-export default function About(): JSX.Element {
+export default function Index(): JSX.Element {
 
     return (
-        <>
+        <Style.Container>
             <Global.RowResponsive mediaMaxWidth={900} flexDirection={'column-reverse'}>
                 { Stacks.map((item, i) =>
                     {
@@ -34,6 +35,6 @@ export default function About(): JSX.Element {
                     return null
                 })}
             </Global.RowResponsive> 
-        </>
+        </Style.Container>
     );
 }

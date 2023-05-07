@@ -1,7 +1,6 @@
-import React, { useEffect, useRef } from 'react';
+import { useEffect, useRef } from 'react';
 import Typed from 'typed.js';
 import * as Style from './Header.style';
-import * as Global from '../../styles/global';
 import { SocialMedia } from '../Icons/SocialMedia/SocialMedia';
 import { SocialLinks } from '../../assets/data/Profile/SocialMedia'; 
 import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"

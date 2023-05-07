@@ -2,8 +2,6 @@ import React from 'react';
 import * as Style from './About.style';
 import * as Global from '../../styles/global';
 import Profile from '../../assets/img/profile/profile-main.png';
-import Bar from '../../components/Progress/Bar';
-import Stacks from '../../components/Icons/Stacks/Stacks';
 
 export default function About(): JSX.Element {
     return (
@@ -22,8 +20,6 @@ export default function About(): JSX.Element {
                     para o Power Bi, também atuei nos desenvolvimentos de sistemas de gerenciamentos, 
                     um deles foi o gerenciamento de toda a das escolas públicas de Cruzerio - SP
                 </Style.Description>
-                <Bar />
-                <Stacks />
             </Style.Container>
         </Global.ContainerCenter>
     );
