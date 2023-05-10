@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { Colors } from '../../styles/Colors.style'
 
 export const Section = styled.section`
     padding: 50px;
@@ -24,13 +25,22 @@ export const TitleName = styled.h1`
 `
 
 export const TitleOffice = styled.h2`
-    font-weight: 400;
-    font-family: "Lato";
-    color: rgb(81, 81, 81);
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
+    color: ${Colors.text};
+    font-weight: bold;
+    font-style: italic;
     margin-bottom: 15px;
+    font-size: 24px;
+    position: relative;
+
+    :after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        background: ${Colors.blue};
+        width: 10%;
+        bottom: 0;
+        left: 0;
+    }
 `
 
 export const Description = styled.h3`

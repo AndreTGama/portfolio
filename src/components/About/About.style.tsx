@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Colors } from '../../styles/Colors.style';
 
 export const ProfileImg = styled.img`
     width: 300px;
@@ -14,8 +15,22 @@ export const Container = styled.div`
 `
 
 export const TitleName = styled.h1`
+    color: ${Colors.text};
+    font-weight: bold;
+    font-style: italic;
     margin-bottom: 15px;
     font-size: 24px;
+    position: relative;
+
+    :after {
+        content: "";
+        position: absolute;
+        height: 3px;
+        background: ${Colors.blue};
+        width: 10%;
+        bottom: 0;
+        left: 0;
+    }
 `
 
 export const TitleOffice = styled.h2`
@@ -34,5 +49,5 @@ export const Description = styled.h3`
     font-size: 14px;
     letter-spacing: 5px;
     font-weight: initial;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 `
