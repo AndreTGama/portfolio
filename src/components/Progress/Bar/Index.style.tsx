@@ -7,6 +7,7 @@ export const Container = styled.div`
 
 export const Row = styled.div`
     display: flex;
+    margin-bottom: 15px;
     @media (max-width: 900px) {
         display: flex;
         flex-direction: column;

@@ -7,6 +7,7 @@ export const Section = styled.section`
 
 export const Row = styled.div`
     display: flex;
+    align-items: center;
     @media (max-width: 900px) {
         display: flex;
         flex-direction: column;

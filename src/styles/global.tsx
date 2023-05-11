@@ -56,6 +56,7 @@ export const ContainerCenter = styled.section<State>`
     display: flex;
     justify-content: space-evenly;;
     align-items: center;
+    margin-bottom: 30px;
     @media (max-width: 900px) {
         display: flex;
         flex-direction: column-reverse;
