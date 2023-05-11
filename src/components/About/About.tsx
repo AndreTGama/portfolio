@@ -4,6 +4,7 @@ import Profile from '../../assets/img/profile/profile-main.png'
 import getAge from '../../Helpers/GetAge'
 import ButtonAnchor from '../Button/Drop/Anchor/Index'
 import { Colors } from '../../styles/Colors.style'
+import CV from '../../assets/pdf/cv-andre-gama.pdf'
 
 export default function About(): JSX.Element {
    
@@ -13,15 +14,16 @@ export default function About(): JSX.Element {
         <Style.Container>
             <Style.TitleName>Sobre Mim</Style.TitleName>
             <Style.Description>
-                Me chamo André Toledo Gama, tenho {getAge('1994-10-08')} anos, formação academicia em Engenharia da computação e tenho uma grande paixão pela linguagem PHP e atuo como desenvolvedor Back-End, mesmo tendo uma grande paixão epla linguagem, sempre procuro aprender sobre novas tecnologias que estão no mercado.
+                Me chamo André Toledo Gama, tenho {getAge('1994-10-08')} anos, sou formato em Engenharia da Computação e tenho uma grande paixão pela linguagem PHP, mesmo tendo uma grande paixão epla linguagem, sempre procuro aprender sobre novas tecnologias que estão no mercado. Atualmente atuo como desenvolvedor Back-End.
             </Style.Description>
             <ButtonAnchor 
                 text={'Download CV'} 
                 label={'Botão para fazer o download do meu curriculo'} 
-                url={'teste'} 
+                url={CV} 
                 fontColor={'white'}
                 borderColor={'#000'}
                 backgroundColor={Colors.blue}
+                download={true}
             />
         </Style.Container>
     </Global.ContainerCenter>

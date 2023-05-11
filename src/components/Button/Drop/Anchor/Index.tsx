@@ -6,20 +6,30 @@ type Props = {
     url?: string
     fontColor: string,
     borderColor: string,
-    backgroundColor: string
+    backgroundColor: string,
+    download?: boolean,
 }
-export default function ButtonAnchor({ text, label, url, fontColor, borderColor, backgroundColor } : Props) {
+export default function ButtonAnchor({ 
+  text, 
+  label, 
+  url, 
+  fontColor, 
+  borderColor, 
+  backgroundColor, 
+  download 
+} : Props) {
   return (
     <Style.Button
-        target='_blank'
-        rel='noreferrer'
-        href={url}
-        aria-label={label}
-        fontColor={fontColor}
-        borderColor={borderColor}
-        backgroundColor={backgroundColor}
+      target='_blank'
+      rel='noreferrer'
+      href={url}
+      aria-label={label}
+      fontColor={fontColor}
+      borderColor={borderColor}
+      backgroundColor={backgroundColor}
+      download={download}
     >
-        {text}
+      {text}
     </Style.Button>
   );
 }
