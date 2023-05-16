@@ -1,32 +1,25 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Options } from './Options/Options';
-import {
-    Div,
-    RowLargeScreen,
-    RowSmallScreen,
-    ResponsiveNavBar,
-} from './Navbar.style';
 import { Logo } from '../Logo/Index';
 import { Hamburger } from '../Icons/Hamburger/Hamburger';
+import * as Style from './Navbar.style';
 
 export function Navbar(): JSX.Element {
-    const [activeHamburger, setActiveHamburger] = useState(false);
-  
-    return (
-        <nav>
-            <Div>
-              <RowLargeScreen>
-                <Logo/>
-                <Options active={activeHamburger} setActive={setActiveHamburger}/>
-              </RowLargeScreen>
-              <RowSmallScreen>
-                <Logo/>
-                <Hamburger active={activeHamburger} setActive={setActiveHamburger}/>
-              </RowSmallScreen>
-              <ResponsiveNavBar active={activeHamburger}>
-                <Options active={activeHamburger} setActive={setActiveHamburger} />
-              </ResponsiveNavBar>
-            </Div>
-        </nav>
-    );
+  const [activeHamburger, setActiveHamburger] = useState(false);
+
+  return (
+    <Style.Nav>
+      <Style.RowLargeScreen>
+        <Logo/>
+        <Options active={activeHamburger} setActive={setActiveHamburger}/>
+      </Style.RowLargeScreen>
+      <Style.RowSmallScreen>
+        <Logo/>
+        <Hamburger active={activeHamburger} setActive={setActiveHamburger}/>
+      </Style.RowSmallScreen>
+      <Style.ResponsiveNavBar active={activeHamburger}>
+        <Options active={activeHamburger} setActive={setActiveHamburger} />
+      </Style.ResponsiveNavBar>
+    </Style.Nav>
+  );
 }

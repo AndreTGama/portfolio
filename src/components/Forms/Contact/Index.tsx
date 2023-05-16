@@ -3,6 +3,7 @@ import * as Style from './Index.style';
 import Input from '../../Inputs/Text/Index';
 import TextArea from '../../Inputs/TextArea/Index';
 import { useState } from 'react';
+import { Colors } from '../../../styles/Colors.style';
 
 export default function Header(): JSX.Element {
     const [ name, setName ]   = useState('');
@@ -43,8 +44,8 @@ export default function Header(): JSX.Element {
                     label={'Botão para enviar o formulário'}
                     type={'submit'}
                     fontColor={'white'}
-                    borderColor={'black'}
-                    backgroundColor={'rgb(137, 67, 217)'}
+                    borderColor={'#000'}
+                    backgroundColor={Colors.blue}
                 /> 
             </Style.Form>
         </Style.Container>

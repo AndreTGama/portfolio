@@ -1,4 +1,3 @@
-import React from 'react';
 import {
     ShadowWhite,
 } from '../../styles/Fonts.style';
@@ -6,8 +5,10 @@ import {
 export function Logo(): JSX.Element {
 
     return (
-        <ShadowWhite>
-            Andre Gama
-        </ShadowWhite>
+        <a href='./' aria-label='logo para levar até a página principal do site'>
+            <ShadowWhite>
+                Andre Gama
+            </ShadowWhite>
+        </a>
     );
 }

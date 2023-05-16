@@ -14,7 +14,7 @@ export const Container = styled.div`
 
     .flip-box-front,
     .flip-box-back {
-        background-image: linear-gradient(rgba(35, 0, 38, 0.9), rgba(35, 0, 38, 0.9)), url(${BackGround});
+        background-image: linear-gradient(rgba(36, 36, 36, 0.9), rgba(0, 0, 0, 0.9)), url(${BackGround});
         border-radius: 8px;
         min-height: 400px;
         -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
@@ -120,7 +120,7 @@ export const Paragraph = styled.p`
 
 export const Img = styled.img`
     width: 280px;
-    height: 100%;
+    height: 100px;
     margin-bottom: 15px;
 `
 

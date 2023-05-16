@@ -13,8 +13,7 @@ type StateRow = {
 
 export const Section = styled.section`
     margin-bottom: 15px;
-    width: 100%;
-    height: 100%;
+    padding: 50px;
 `
 
 export const GlobalStyle = createGlobalStyle`
@@ -36,6 +35,7 @@ export const Row = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 30px;
 `;
 
 export const RowResponsive = styled(Row)<StateRow>`
@@ -51,7 +51,7 @@ export const Container = styled(Section)<State>`
     padding: 3em;
 `;
 
-export const ContainerCenter = styled.section<State>`
+export const ContainerCenter = styled.section`
     padding: 15px;
     display: flex;
     justify-content: space-evenly;;

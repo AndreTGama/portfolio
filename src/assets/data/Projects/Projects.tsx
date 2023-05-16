@@ -1,6 +1,6 @@
-import QueroIrApi from '../../img/logo.png';
-import Portfolio from '../../img/logo.png';
-import QueroIrApp from '../../img/logo.png';
+import QueroIrApi from '../../img/logo-laravel.jpg';
+import Portfolio from '../../img/logo-site.png';
+import QueroIrApp from '../../img/flutter-logo.png';
 
 export const Projects = [
     {

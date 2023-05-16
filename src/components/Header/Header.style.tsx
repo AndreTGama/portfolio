@@ -4,6 +4,7 @@ import { Colors } from '../../styles/Colors.style'
 export const Section = styled.section`
     width: 100%;
 `;
+
 export const Container = styled.div`
     position: absolute;
     left: 0;

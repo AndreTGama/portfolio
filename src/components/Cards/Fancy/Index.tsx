@@ -1,6 +1,7 @@
 import Star from '../../Icons/Star/Index'
 import ButtonAnchor from '../../Button/Drop/Anchor/Index'
 import * as Style from './Fancy.style'
+import { Colors } from '../../../styles/Colors.style'
 
 type Props = {
     name: string,
@@ -46,9 +47,9 @@ export default function Index({ name, link, stars, language, image, description}
                                     text='Saiba Mais'
                                     label='Botão para redirecionar ao GitHub'
                                     url={link}
-                                    fontColor={'black'}
+                                    fontColor={'white'}
                                     borderColor={'white'}
-                                    backgroundColor={'rgb(137, 67, 217)'}
+                                    backgroundColor={Colors.blue}
                                 />
                             </Style.Footer>
                         </Style.InnerBack>

@@ -1,18 +1,18 @@
-import styled from "styled-components";
-import { Row } from "../../styles/global";
+import styled from 'styled-components'
+import { Row } from '../../styles/global'
 
 type StateActive = {
     active: boolean
 }
 
-export const GlassesEffect = styled.div`
-    background: rgba(255, 255, 255, 0.15);
+export const GlassesEffect = styled.nav`
+    background: rgba(0, 0, 0, 0.1);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0);
-    backdrop-filter: blur(2.2px);
-    -webkit-backdrop-filter: blur(2.2px);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 `
 
-export const Div = styled(GlassesEffect)`
+export const Nav = styled(GlassesEffect)`
     width: 100%;
     color: #f7f7f7;
     position: fixed;
@@ -22,6 +22,7 @@ export const Div = styled(GlassesEffect)`
 
 export const RowLargeScreen = styled(Row)`
     flex-direction: row;
+    align-items: center;
     padding: 0 2rem;
     height: 100%;
 

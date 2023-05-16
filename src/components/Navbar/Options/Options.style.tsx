@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { Row } from "../../../styles/global";
 
 type State = {
     active?: boolean
@@ -19,7 +18,8 @@ export const Links = styled.a<State>`
     }
 `
 
-export const RowCollumn = styled(Row)`
+export const RowCollumn = styled.div`
+    display: flex;
     flex-direction: row;
     
     @media (max-width: 790px) {
