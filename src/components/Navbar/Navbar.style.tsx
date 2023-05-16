@@ -1,5 +1,4 @@
 import styled from 'styled-components'
-import { Row } from '../../styles/global'
 
 type StateActive = {
     active: boolean
@@ -20,7 +19,9 @@ export const Nav = styled(GlassesEffect)`
     height: 3rem;
 `
 
-export const RowLargeScreen = styled(Row)`
+export const RowLargeScreen = styled.div`
+    display: flex;
+    justify-content: space-between;
     flex-direction: row;
     align-items: center;
     padding: 0 2rem;
@@ -30,13 +31,15 @@ export const RowLargeScreen = styled(Row)`
         display: none;
     }
 `
-export const RowSmallScreen = styled(Row)`
+export const RowSmallScreen = styled.div`
     display: none;
     height: 100%;
     padding: 0 2rem;
     @media (max-width: 790px) {
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
     }
 `
 

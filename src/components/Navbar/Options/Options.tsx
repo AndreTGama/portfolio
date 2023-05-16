@@ -24,7 +24,7 @@ export function Options({
                 active={activeSection === 'a_about'}
                 href="#about"
             >
-                About
+                Sobre Mim
             </Links>
             <Links
                 onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
@@ -32,7 +32,7 @@ export function Options({
                 active={activeSection === 'a_projects'}
                 href="#projects"
             >
-                Projects
+                Minhas competências
             </Links>
             <Links
                 onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
@@ -40,7 +40,7 @@ export function Options({
                 active={activeSection === 'a_blog'}
                 href="#blog"
             >
-                Blog
+                Projetos
             </Links>
             <Links
                 onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
@@ -48,7 +48,7 @@ export function Options({
                 active={activeSection === 'a_contact'}
                 href="#contact"
             >
-                Contact
+                Contato
             </Links>
         </RowCollumn>
     );
