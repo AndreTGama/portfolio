@@ -1,10 +1,10 @@
-import { useEffect, useRef } from 'react';
-import Typed from 'typed.js';
-import { SocialMedia } from '../Icons/SocialMedia/SocialMedia';
-import { SocialLinks } from '../../assets/data/Profile/SocialMedia'; 
-import { faInstagram, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons"
-import ParticlesBackground from '../Background/Particles/ParticlesBackground';
+import { useEffect, useRef } from 'react'
+import Typed from 'typed.js'
+import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
+import ParticlesBackground from '../Background/Particles/ParticlesBackground'
 import * as Style from './Header.style';
+import { SocialMedia } from '../Icons/SocialMedia/SocialMedia'
+import { SocialLinks } from '../../assets/data/Profile/SocialMedia copy'
 
 export default function Header(): JSX.Element {
     const el = useRef(null);
