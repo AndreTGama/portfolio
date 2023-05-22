@@ -39,10 +39,10 @@ export const SpanTittle = styled.span`
 `
 
 export const Icons = styled.div`
-    color: ${Colors.squaryDark};
+    color: ${Colors.blue};
     margin: 5px;
     :hover{
-        color: ${Colors.squary};
+        color: ${Colors.blueHover};
         text-shadow: white 0px 0px 20px;
     }
 `

@@ -1,8 +1,7 @@
 
 export const Colors = {
     blue: '#19376D',
-    blueHover: '#19376D',
-    primary: '#FAF8F8',
+    blueHover: '#075DF9',
     darkBlue: '#0B2447',
     complementary: '#E0980B',
     squary: '#E038A1',

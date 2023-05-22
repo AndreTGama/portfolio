@@ -1,5 +1,5 @@
-import styled from "styled-components";
-import { Colors } from "../../../styles/Colors.style";
+import styled from 'styled-components'
+import { Colors } from '../../../styles/Colors.style'
 
 export const BackGround = styled.section`
     height: 300px;

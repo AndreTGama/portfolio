@@ -1,11 +1,11 @@
-import styled from "styled-components"
-import { Colors } from "../../../styles/Colors.style"
+import styled from 'styled-components'
+import { Colors } from '../../../styles/Colors.style'
 
 export const Anchor = styled.a`
-    color: ${Colors.squaryDark};
+    color: ${Colors.blue};
     margin: 5px;
     :hover{
-        color: ${Colors.squary};
+        color: ${Colors.blueHover};
         text-shadow: white 0px 0px 20px;
     }
 `

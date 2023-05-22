@@ -20,33 +20,33 @@ export function Options({
         <RowCollumn>
             <Links
                 onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
-                id="a_about"
+                id='a_about'
                 active={activeSection === 'a_about'}
-                href="#about"
+                href='#about'
             >
                 Sobre Mim
             </Links>
             <Links
                 onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
-                id="a_projects"
-                active={activeSection === 'a_projects'}
-                href="#projects"
+                id='a_skills'
+                active={activeSection === 'a_skills'}
+                href='#skills'
             >
                 Minhas competências
             </Links>
             <Links
                 onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
-                id="a_blog"
-                active={activeSection === 'a_blog'}
-                href="#blog"
+                id='a_blog'
+                active={activeSection === 'a_projects'}
+                href='#projects'
             >
                 Projetos
             </Links>
             <Links
                 onClick={(event : React.MouseEvent<HTMLButtonElement>)=> activeLink(event)}
-                id="a_contact"
+                id='a_contact'
                 active={activeSection === 'a_contact'}
-                href="#contact"
+                href='#contact'
             >
                 Contato
             </Links>

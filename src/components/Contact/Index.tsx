@@ -7,7 +7,7 @@ import Vertical from '../Divisor/Vertical/Index';
 
 export default function Contact(): JSX.Element {
     return (
-        <Style.Section>
+        <Style.Section id='contact'>
             <Font.Title>Contato</Font.Title>
             <Global.RowResponsive mediaMaxWidth={740} flexDirection={'column'}>
                 <Form />

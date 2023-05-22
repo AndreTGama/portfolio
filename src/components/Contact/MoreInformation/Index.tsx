@@ -25,12 +25,17 @@ export default function MoreInformation(): JSX.Element {
                 </Style.Row>
             <Style.Row>
                 <Style.Icons>
-                    <FontAwesomeIcon 
-                        icon={faLocationDot} 
-                        size='2xl' 
-                    />
+                    <a 
+                        href='https://www.google.com/maps/place/Guaratinguet%C3%A1,+State+of+S%C3%A3o+Paulo/@-22.7922256,-45.2736927,12z/data=!3m1!4b1!4m6!3m5!1s0x94ccc43d2f182b09:0x4ff95ebd5d4a29a7!8m2!3d-22.8036913!4d-45.1859219!16s%2Fg%2F11bc5zbbydo'
+                        target='_blank'
+                    >
+                        <FontAwesomeIcon 
+                            icon={faLocationDot} 
+                            size='2xl' 
+                        />
+                        <Style.Span>Guaratinguetá - SP</Style.Span>
+                    </a>
                 </Style.Icons>
-                <Style.Span>Guaratinguetá - SP</Style.Span>
             </Style.Row>
             <Horizon />
             <Style.SpanTittle>
