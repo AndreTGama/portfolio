@@ -4,7 +4,7 @@ import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-
 import ParticlesBackground from '../Background/Particles/ParticlesBackground'
 import * as Style from './Header.style';
 import { SocialMedia } from '../Icons/SocialMedia/SocialMedia'
-import { SocialLinks } from '../../assets/data/Profile/SocialMedia'
+import { SocialLinks } from '../../assets/data/Profile/Social'
 
 export default function Header(): JSX.Element {
     const el = useRef(null);
