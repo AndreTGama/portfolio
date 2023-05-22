@@ -1,4 +1,3 @@
-import * as Global from '../../styles/global';
 import * as Style from './Index.style';
 import * as Font from '../../styles/Fonts.style';
 import Form from '../Forms/Contact/Index';
@@ -9,13 +8,13 @@ export default function Contact(): JSX.Element {
     return (
         <Style.Section id='contact'>
             <Font.Title>Contato</Font.Title>
-            <Global.RowResponsive mediaMaxWidth={740} flexDirection={'column'}>
+            <Style.Row>
                 <Form />
                 <Style.Line>
                     <Vertical />
                 </Style.Line>
                 <MoreInformation />
-            </Global.RowResponsive>
+            </Style.Row>
         </Style.Section>
     );
 }

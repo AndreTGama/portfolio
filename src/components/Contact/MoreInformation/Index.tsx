@@ -1,28 +1,28 @@
-import { SocialMedia } from '../../Icons/SocialMedia/SocialMedia';
-import { SocialLinks } from '../../../assets/data/Profile/SocialMedia'; 
+import { SocialMedia } from '../../Icons/SocialMedia/SocialMedia'
+import { SocialLinks } from '../../../assets/data/Profile/SocialMedia'
 import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import Horizon from '../../Divisor/Horizon/Index';
-import * as Style from './Index.style';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import Horizon from '../../Divisor/Horizon/Index'
+import * as Style from './Index.style'
 
 export default function MoreInformation(): JSX.Element {
    
     return (
         <Style.Column>
-                <Style.Row>
-                    <Style.Icons>
-                        <a href="mailto:andre_gama789@hotmail.com?subject=Assunto do email&body=Conteúdo">
-                                <FontAwesomeIcon 
-                                    icon={faEnvelope} 
-                                    size='2xl'
-                                /> 
-                            <Style.Span>
-                                andre_gama789@hotmail.com
-                            </Style.Span>
-                        </a>
-                    </Style.Icons>
-                </Style.Row>
+            <Style.Row>
+                <Style.Icons>
+                    <a href="mailto:andre_gama789@hotmail.com?subject=Assunto do email&body=Conteúdo">
+                            <FontAwesomeIcon 
+                                icon={faEnvelope} 
+                                size='2xl'
+                            /> 
+                        <Style.Span>
+                            andre_gama789@hotmail.com
+                        </Style.Span>
+                    </a>
+                </Style.Icons>
+            </Style.Row>
             <Style.Row>
                 <Style.Icons>
                     <a 

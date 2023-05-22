@@ -5,8 +5,8 @@ export const Column = styled.div`
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding: 50px;
     align-items: center;
+    margin-bottom: 30px;
 `;
 
 export const Row = styled.div`
