@@ -2,7 +2,7 @@ import { faInstagram, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-
 import { faEnvelope, faLocationDot } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { SocialMedia } from '../../Icons/SocialMedia/SocialMedia'
-import { SocialLinks } from '../../../assets/data/Profile/SocialMedia'
+import { SocialLinks } from '../../../assets/data/Profile/Social'
 import Horizon from '../../Divisor/Horizon/Index'
 import * as Style from './Index.style'
 
