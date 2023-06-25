@@ -10,6 +10,12 @@ export const Row = styled.div`
     justify-content: space-between;
     align-items: end;
     margin-bottom: 15px;
+    @media (max-width: 570px) {
+        display: block;
+        img{
+            margin: 15px 0;
+        }
+    }
 `
 
 export const Achor = styled.a`

@@ -4,7 +4,7 @@ import * as Style from './Stacks.style'
 export default function Index(): JSX.Element {
 
     return (
-        <Style.Row style={{display:'flex'}}>
+        <Style.Row>
             <Style.Achor title='70%' href='https://developer.mozilla.org/pt-BR/docs/Web/HTML'>
                 <img alt='html-icon' src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg' />
             </Style.Achor>

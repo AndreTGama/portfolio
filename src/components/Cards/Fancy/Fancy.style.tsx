@@ -122,6 +122,10 @@ export const Img = styled.img`
     width: 280px;
     height: 100px;
     margin-bottom: 15px;
+    @media (max-width: 280px) {
+        width: 140px;
+        height: 50px;
+    }
 `
 
 export const Footer = styled.div`
