@@ -13,9 +13,13 @@ export const Row = styled.div`
 `
 
 export const Achor = styled.a`
-    width: 40px;
+    width: 48px;
     padding: 15px 10px 0 0;
     :last-child {
         padding: 0;
+    }
+    img {
+        width: 48px;
+        height: 48px; 
     }
 `
