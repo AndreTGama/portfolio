@@ -24,7 +24,7 @@ export default function Index({ name, link, stars, language, image, description}
                                 <Style.Header>{name}</Style.Header>
                                 <Star value={stars}/>
                             </Style.Header>
-                            <Style.Img src={image} />
+                            <Style.Img src={image} alt={name}/>
                             <Style.Paragraph>
                                 {description}
                             </Style.Paragraph>
@@ -36,7 +36,7 @@ export default function Index({ name, link, stars, language, image, description}
                                 <Style.Header>{name}</Style.Header>
                                 <Star value={stars}/>
                             </Style.Header>
-                            <Style.Img src={image} />
+                            <Style.Img src={image}  alt={name}/>
                             <Style.Footer>
                                 <Style.Languages>
                                     {language.map((item) => {
@@ -45,7 +45,7 @@ export default function Index({ name, link, stars, language, image, description}
                                 </Style.Languages>
                                 <ButtonAnchor 
                                     text='Saiba Mais'
-                                    label='Botão para redirecionar ao GitHub'
+                                    label='Botão para redirecionar ao GitHub do projeto'
                                     url={link}
                                     fontColor={'white'}
                                     borderColor={'white'}

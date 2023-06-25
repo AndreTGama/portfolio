@@ -1,7 +1,7 @@
 import * as Style from './About.style'
 import * as Global from '../../styles/global'
 import * as Font from '../../styles/Fonts.style'
-import Profile from '../../assets/img/profile/profile-main.png'
+import Profile from '../../assets/img/profile/profile-main.webp'
 import getAge from '../../Helpers/GetAge'
 import ButtonAnchor from '../Button/Drop/Anchor/Index'
 import { Colors } from '../../styles/Colors.style'

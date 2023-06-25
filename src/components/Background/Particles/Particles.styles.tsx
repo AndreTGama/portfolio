@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import ParatyNoite from '../../../assets/img/paraty/paratyWave-2.png';
+import ParatyNoite from '../../../assets/img/paraty/paratyWave-2.webp';
 
 export const Box = styled.div`
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.0)), url(${ParatyNoite});
