@@ -24,7 +24,9 @@ export default function Index({ name, link, stars, language, image, description}
                                 <Style.Header>{name}</Style.Header>
                                 <Star value={stars}/>
                             </Style.Header>
-                            <Style.Img src={image} alt={name}/>
+                            <center>
+                                <Style.Img src={image} alt={name}/>
+                            </center>
                             <Style.Paragraph>
                                 {description}
                             </Style.Paragraph>
@@ -36,7 +38,9 @@ export default function Index({ name, link, stars, language, image, description}
                                 <Style.Header>{name}</Style.Header>
                                 <Star value={stars}/>
                             </Style.Header>
-                            <Style.Img src={image}  alt={name}/>
+                            <center>
+                                <Style.Img src={image} alt={name}/>
+                            </center>
                             <Style.Footer>
                                 <Style.Languages>
                                     {language.map((item) => {
