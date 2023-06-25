@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import BackGround from '../../../assets/img/background-gif.gif';
+import BackGround from '../../../assets/img/hex.webp';
 
 export const Container = styled.div`
     color: white;
@@ -14,7 +14,7 @@ export const Container = styled.div`
 
     .flip-box-front,
     .flip-box-back {
-        background-image: linear-gradient(rgba(36, 36, 36, 0.9), rgba(0, 0, 0, 0.9)), url(${BackGround});
+        background-image: linear-gradient(rgba(36, 36, 36, 0.9), rgba(0, 0, 0, 0.85)), url(${BackGround});
         border-radius: 8px;
         min-height: 400px;
         -ms-transition: transform 0.7s cubic-bezier(.4,.2,.2,1);
